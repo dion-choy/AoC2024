@@ -1,6 +1,4 @@
 <?php
-define("inputLength", 140);
-
 $input = fopen("input.txt", "r", true) or die("Unable to open file");
 $arr = [];
 
@@ -13,10 +11,9 @@ while (!feof($input)) {
     $sum += substr_count($tempStr, "XMAS");
     $sum += substr_count($tempStr, "SAMX");
 
-    array_splice($tempArr, inputLength, 2);
+    $tempArr = str_split(trim($tempStr));
     array_push($arr, $tempArr);
 }
-
 countVert($arr);
 
 $arrUpLeft = $arr;

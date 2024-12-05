@@ -1,21 +1,18 @@
 <?php
-define("inputLength", 140);
-
 $input = fopen("input.txt", "r", true) or die("Unable to open file");
 $arr = [];
 
 while (!feof($input)) {
     $tempStr = fgets($input);
-    $tempArr = str_split($tempStr);
+    $tempArr = str_split(trim($tempStr));
 
-    array_splice($tempArr, inputLength, 2);
     array_push($arr, $tempArr);
 }
 
 $arrUpLeft = $arr;
 for($i = 0; $i<count($arr); $i++) {
     $arrUpLeft[$i] = array_pad($arrUpLeft[$i], -$i-count($arr), " ");
-    $arrUpLeft[$i] = array_pad($arrUpLeft[$i], inputLength*2-1,0);
+    $arrUpLeft[$i] = array_pad($arrUpLeft[$i], count($arr)*2-1,0);
 }
 
 $arrUpRight = $arr;
@@ -24,7 +21,6 @@ for($i = 0; $i<count($arr); $i++) {
 }
 
 echo count(array_intersect(getPos($arrUpLeft), getPos($arrUpRight)));
-
 fclose($input);
 
 function getPos($arr): array {
