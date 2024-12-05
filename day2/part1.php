@@ -22,9 +22,6 @@ function isSafe($record) {
         $asc = false;
     }
 
-    $nextAsc = $asc;
-
-    $safeFlag = true;
     for($i = 0; $i<count($record)-1; $i++) {
         if($record[$i] < $record[$i+1]) {
             $nextAsc = true;
@@ -33,16 +30,14 @@ function isSafe($record) {
         }
 
         if ($nextAsc != $asc) {
-            $safeFlag = false;
-            break;
+            return false;
         }
 
         $diff = $record[$i] - $record[$i+1];
         if( $diff > 3 || $diff < -3 || $diff == 0) {
-            $safeFlag = false;
-            break;
+            return false;
         }
     }
 
-    return $safeFlag;
+    return true;
 }
