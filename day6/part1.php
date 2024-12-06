@@ -39,7 +39,7 @@ while(true) {
             throw new RuntimeException("\$dir can't be less than 0 or more than 3");
     }
 
-    if ($nextPos[0]<0 || $pos[0]>=count($map) || $pos[1]<0 || $pos[1]>=count($map[0])) {
+    if ($nextPos[0]<0 || $nextPos[0]>=count($map) || $nextPos[1]<0 || $nextPos[1]>=count($map[0])) {
         break;
     }
 
