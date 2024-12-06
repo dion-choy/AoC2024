@@ -1,5 +1,5 @@
 <?php
-$input = fopen("input.txt", "r", true);
+$input = fopen("day2.txt", "r");
 $arr = [];
 
 while(!feof($input)) {

@@ -1,5 +1,5 @@
 <?php
-$input = fopen("input.txt", "r", true);
+$input = fopen("day3.txt", "r");
 $strIn = "";
 
 while(!feof($input)) {

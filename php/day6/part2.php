@@ -1,5 +1,5 @@
 <?php
-$input = fopen("input.txt", "r", true);
+$input = fopen("day6.txt", "r");
 
 $map = [];
 while(!feof($input)) {

@@ -1,5 +1,5 @@
 <?php
-$input = fopen("input.txt", "r", true) or die("Unable to open file");
+$input = fopen("day4.txt", "r");
 $arr = [];
 
 while (!feof($input)) {

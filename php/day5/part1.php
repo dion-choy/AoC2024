@@ -1,6 +1,6 @@
 <?php
 define("orderLen", 1176);
-$input = fopen("input.txt", "r", true);
+$input = fopen("day5.txt", "r");
 $smaller = [];
 $bigger = [];
 

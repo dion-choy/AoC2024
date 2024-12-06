@@ -1,6 +1,5 @@
 <?php
-
-$input = fopen("input.txt", "r", true);
+$input = fopen("day1.txt", "r");
 $list1 = [];
 $list2 = [];
 
