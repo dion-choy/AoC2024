@@ -1,4 +1,4 @@
-# <p style="text-align:center"> [Advent of Code 2024](https://adventofcode.com/2024/day/5)</p>
+# <p align="center"> [Advent of Code 2024](https://adventofcode.com/2024/day/5)</p>
 
 ### Solutions
 
@@ -11,8 +11,8 @@
 | [5](https://adventofcode.com/2024/day/5) |     ✅     |     ✅     |      ✅       |               |
 | [6](https://adventofcode.com/2024/day/6) |     ✅     |     ✅     |               |               |
 | [7](https://adventofcode.com/2024/day/7) |     ✅     |     ✅     |               |               |
+| [8](https://adventofcode.com/2024/day/8) |     ✅     |     ✅     |               |               |
 
-<!-- |  [8](https://adventofcode.com/2024/day/8)  |     ✅     |     ✅     |      ✅       |      ✅       | -->
 <!-- |  [9](https://adventofcode.com/2024/day/9)  |     ✅     |     ✅     |      ✅       |      ✅       | -->
 <!-- | [10](https://adventofcode.com/2024/day/10) |     ✅     |     ✅     |      ✅       |      ✅       | -->
 <!-- | [11](https://adventofcode.com/2024/day/11) |     ✅     |     ✅     |      ✅       |      ✅       | -->
